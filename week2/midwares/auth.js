@@ -6,7 +6,7 @@ const auth = (req, res, next) => {
 
     try {   
         username = req.body.username;
-        token = req.body.token;
+        token = req.headers['authorization'];
     } catch (e) {   
         return res.json({ message: e });
     }
