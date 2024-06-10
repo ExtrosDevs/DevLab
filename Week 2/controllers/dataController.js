@@ -9,3 +9,7 @@ exports.postData = (req, res) => {
 exports.getData = (req, res) => {
   res.send(dataList);
 };
+
+exports.getDummy = (req, res) => {
+  res.send({ message: "Here is your dummy data!"});
+};
